@@ -1,7 +1,50 @@
 /* Responsive */
 
 
-@media (max-width: 1199px) {}
+@media (max-width: 1440px) {
+  .banner-statistics-wrapper {
+    max-width: 1200px;
+  }
+
+  .banner-statistics-wrapper .col:nth-child(1) {
+    flex: 0 0 350px;
+  }
+
+  .banner-statistics-wrapper .col:nth-child(2) {
+    flex: 0 0 460px;
+  }
+
+  .banner-statistics-wrapper .col:nth-child(3) {
+    flex: 0 0 340px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .hdr_menu li {
+    margin-right: 20px;
+  }
+
+  .banner-statistics-wrapper .col:nth-child(1),
+  .banner-statistics-wrapper .col:nth-child(2),
+  .banner-statistics-wrapper .col:nth-child(3) {
+    flex: auto;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .seo-results-graph-outer {
+    display: flex;
+    gap: 30px;
+  }
+
+  .seo-results-graph-outer .seo-results-graph-card {
+    width: 50%;
+  }
+
+  .location-marketing-card .data {
+    max-width: 260px;
+  }
+}
 
 @media (max-width: 991px) {
   .logo {
@@ -280,50 +323,53 @@
     display: block;
   }
 
-  .our-service-box {
-    margin-bottom: 30px;
+  .location-marketing-card .data {
+    max-width: 100%;
+    flex: 1;
+    padding-left: 25px;
   }
 
-  .our-service-box img {
-    width: 100%;
+  .location-marketing-wrapper [class*=col-]:nth-child(odd) .location-marketing-card .holder .data {
+    text-align: left;
   }
 
-  .roofing-checklist-pic {
-    margin-bottom: 30px;
+  .location-marketing-wrapper [class*=col-]:nth-child(odd) .location-marketing-card .holder {
+    flex-direction: row;
   }
 
-  .roofing-cta-pic {
+  .yelp-partners-cta-wrapper {
+    background-color: #fafafa;
+    padding: 40px 0;
+  }
+
+  .yelp-partners-cta-wrapper::before {
     display: none;
   }
 
-  .why-hire-us-pic img {
-    width: 100%;
+  .digital-marketing-funnel-table::before {
+    display: none;
   }
 
-  .why-hire-us-wrapper .row:nth-child(even) .why-hire-us-content-list-outer {
-    padding-right: 0;
+  .digital-marketing-funnel-description {
     padding-left: 0;
+    position: relative;
+    margin-top: 30px;
   }
 
-  .why-hire-us-content-list-outer {
-    padding-right: 0;
+  .footer-logo-holder {
+    justify-content: center;
   }
 
-  .how-to-start-roofing-service-wrapper .row {
-    flex-direction: column-reverse;
+  .footer-social {
+    text-align: center;
   }
 
-  .how-to-start-roofing-service-pic {
-    margin-bottom: 30px;
+  .logo {
+    position: static;
   }
 
-  .how-to-start-roofing-service-pic img {
-    width: 100%;
-  }
-
-  .home-contact-us-form-outer {
-    max-width: 100%;
-    margin-top: 35px;
+  .banner-social-list {
+    display: none;
   }
 }
 
@@ -338,24 +384,14 @@
   }
 
   .banner-wrapper {
-    padding: 150px 0 60px;
+    padding: 50px 0 20px;
+    border-radius: 0;
   }
 
   .banner-wrapper .banner-text {
     position: relative;
     z-index: 2;
   }
-
-  .banner-wrapper .banner-text h1 {
-    font-size: 32px;
-    color: #fff;
-  }
-
-  .banner-wrapper .banner-text p {
-    color: #fff;
-    font-size: 16px;
-  }
-
 
   .section-padding {
     padding: 50px 0;
@@ -366,147 +402,140 @@
     margin-bottom: 15px;
   }
 
-  .header-contact-btn .btn-primary {
+  .logo,
+  .sticky .logo {
+    width: 80px;
+  }
+
+  .banner-wrapper .banner-text h1 {
+    font-size: 32px;
+  }
+
+  .seo-results-graph-outer {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
+  .seo-results-graph-outer .seo-results-graph-card {
+    width: 100%;
+  }
+
+  .marketing-service-card {
+    padding: 20px 15px;
+  }
+
+  .marketing-service-card::before {
     display: none;
   }
 
-  .header-contact-btn .btn-secondary {
-    font-size: 15px;
-    padding: 7px 12px;
-  }
-
-  .responisve-logo img {
-    -webkit-filter: brightness(0);
-    filter: brightness(0);
-  }
-
-  .banner-wrapper .banner-content-outer {
-    display: block;
-  }
-
-  .banner-quick-links-outer {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-  }
-
-  .banner-quick-links-outer .quick-links-block {
-    width: 50%;
-    max-width: 100%;
-  }
-
-  .our-service-box .service-data {
-    left: 0;
-    max-width: 100%;
-    right: 0;
-    padding: 0 20px;
-  }
-
-  .our-services-wrapper .action-btn {
-    margin-top: 0;
-  }
-
-  .cta-content h2 {
-    font-size: 28px;
-  }
-
-  .roofing-cta-wrapper {
-    padding: 30px 0;
-    background-color: #e5ecf4;
-    background-image: none;
-  }
-
-  .why-hire-us-content-list-outer .list-item h3 {
-    font-size: 21px;
-    padding-left: 38px;
-  }
-
-  .why-hire-us-content-list-outer .list-item .number p {
-    font-size: 24px;
-  }
-
-  .why-hire-us-content-list-outer .list-item .number {
-    top: 2px;
-  }
-
-  .home-contact-us-form-outer {
-    padding: 25px 15px;
-  }
-
-  .footer-bottom-row .holder {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .copyright-text {
-    margin-top: 20px;
-  }
-
-  .types-of-service-wrapper {
-    padding: 40px 0;
-  }
-
-  .service-types-list-outer .list-item h3 {
-    font-size: 19px;
-  }
-
-  .service-cta-wrapper {
-    margin: 50px 0;
-  }
-
-  .when-service-required-row [class*=col-]:nth-child(4),
-  .when-service-required-row [class*=col-]:nth-child(5) {
-    flex: 0 0 auto;
-    width: 100%;
-  }
-
-  .service-we-offer-wrapper .section-heading h2 {
-    font-size: 28px;
-  }
-
-  .faq_acrdn .accordion-item .accordion-header .accordion-button {
-    font-size: 17px;
-  }
-
-  .related-servie-list ul {
-    -moz-column-count: 2;
-    column-count: 2;
-  }
-
-  .related-servie-list li {
-    width: 100%;
-    display: block;
-    margin-right: 0;
+  .marketing-service-card a,
+  .marketing-service-card a h3 {
+    font-size: 20px;
     margin-bottom: 10px;
   }
 
-  .related-servie-list li a {
-    display: block;
-    font-size: 16px;
-    padding: 10px 12px;
+  .digital-marketing-campaign-card .holder {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
   }
 
-  .related-servie-list li a::before {
-    display: none;
-  }
-
-  .recent-post-list a {
-    margin-bottom: 15px;
+  .digital-marketing-campaign-card .media {
+    flex: none;
+    margin-right: 0;
     width: 100%;
-  }
-
-  .recent-post-wrapper {
-    padding-bottom: 30px;
-  }
-
-  .recent-post-wrapper .title p,
-  .related-service-wrapper .title p {
-    font-size: 27px;
+    max-width: 50%;
     margin-bottom: 25px;
   }
 
-  .footer-top-row {
-    padding: 40px 0 20px;
+  .location-marketing-card .holder,
+  .location-marketing-wrapper [class*=col-]:nth-child(odd) .location-marketing-card .holder {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+
+  .location-marketing-card .data {
+    padding-left: 0;
+    margin-top: 25px;
+  }
+
+  .location-marketing-card .media {
+    width: 90px;
+    min-width: 90px;
+    height: 80px;
+  }
+
+  .location-marketing-card .media::before {
+    display: none;
+  }
+
+  .yelp-partners-cta-wrapper .holder {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+
+  .yelp-partners-cta-wrapper .holder h2 {
+    font-size: 28px;
+  }
+
+  .yelp-partners-cta-wrapper .holder .media {
+    min-width: auto;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .digital-marketing-funnel-table {
+    display: block !important;
+    margin-top: 50px;
+  }
+
+  .digital-marketing-funnel-table-card {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+  .business-revolution-card .holder {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+
+  .business-revolution-card .media {
+    min-width: auto;
+    max-width: 120px;
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+
+  .digital-marketing-funnel-wrapper .section-heading p {
+    margin: 0 auto 40px;
+  }
+
+  .business-revolution-card::before {
+    display: none;
+  }
+
+  .footer-top-row>[class*="col-"],
+  .footer-top-row>[class*="col-"]:nth-child(2),
+  .footer-top-row>[class*="col-"]:last-child {
+    padding: 0 15px;
+    border: 0;
+    margin-bottom: 30px;
+  }
+
+  .footer-wrapper {
+    padding-top: 40px;
+  }
+
+  .business-revolution-wrapper .row {
+    margin: 0 -15px;
+  }
+
+  .business-revolution-wrapper [class*=col-] {
+    margin-bottom: 25px;
+    padding: 0 15px;
+  }
+
+  .sticky .nav_holder {
+    padding: 10px 0px;
   }
 }

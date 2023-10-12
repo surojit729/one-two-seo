@@ -1714,7 +1714,8 @@ input[type="number"]::-webkit-outer-spin-button {
     border-color: #ffffff transparent transparent transparent;
 }
 
-.marketing-service-card a {
+.marketing-service-card a,
+.marketing-service-card a h3 {
     font-size: 25px;
     line-height: 1.3;
     font-weight: 700;
@@ -1722,6 +1723,10 @@ input[type="number"]::-webkit-outer-spin-button {
     color: #393939;
     margin-bottom: 25px;
     display: inline-block;
+}
+
+.marketing-service-card a h3 {
+    margin-bottom: 0;
 }
 
 .marketing-service-card p {
