@@ -538,4 +538,9 @@
   .sticky .nav_holder {
     padding: 10px 0px;
   }
+
+  .banner-wrapper,
+  .main-content-wrapper section {
+    overflow-x: hidden;
+  }
 }
