@@ -371,6 +371,28 @@
   .banner-social-list {
     display: none;
   }
+
+  .seo-banner-wrapper .banner-content-outer {
+    flex-direction: column;
+  }
+
+  .seo-banner-wrapper .banner-content-outer .banner-text {
+    max-width: 100%;
+  }
+
+  .seo-banner-wrapper .banner-review-outer {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .seo-banner-wrapper .seo-results-graph-outer .seo-results-graph-card {
+    width: 100%;
+  }
+
+  .coprehensive-seo-wrapper .coprehensive-seo-content-holder .section-heading {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -542,5 +564,46 @@
   .banner-wrapper,
   .main-content-wrapper section {
     overflow-x: hidden;
+  }
+
+  .seo-metrics-wrapper .digital-marketing-funnel-table-card:first-child {
+    width: 100%;
+  }
+
+  .coprehensive-seo-card {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .footer-cta-wrapper .section-heading h2 {
+    font-size: 28px;
+  }
+
+  .seo-metrics-wrapper {
+    padding-top: 40px;
+  }
+
+  .digital-marketing-funnel-wrapper .section-heading p {
+    margin: 0;
+  }
+
+  .seo-metrics-wrapper .digital-marketing-funnel-table-card:last-child {
+    width: 100%;
+  }
+
+  .seo-trends-wrapper {
+    padding-bottom: 0;
+  }
+
+  .faq_acrdn .accordion-item .accordion-header .accordion-button {
+    font-size: 18px;
+  }
+
+  .seo-contact-form-outer {
+    padding: 30px 20px;
+  }
+
+  .power-tailored-seo-wrapper {
+    padding-bottom: 0;
   }
 }
