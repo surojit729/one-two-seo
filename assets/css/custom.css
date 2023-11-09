@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@400;500;600&display=swap');
 
 @font-face {
     font-family: 'Cambon';
@@ -15,6 +16,9 @@
 /*
 font-family: 'Mulish', sans-serif;
 font-family: 'Cambon';
+font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Raleway', sans-serif;
 */
 
 :root {
@@ -26,6 +30,9 @@ font-family: 'Cambon';
     --heading-color: #292c30;
     --heading-font: 'Cambon', sans-serif;
     --secondary-font: 'Mulish', sans-serif;
+    --montsrrat: 'Montserrat', sans-serif;
+    --raleway: 'Raleway', sans-serif;
+    --playfair: 'Playfair Display', sans-serif;
     --body-font: 'Mulish', sans-serif;
     --primary-transition: all 0.4s ease-in-out;
 }
@@ -294,7 +301,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 
 .container {
-    max-width: 1170px;
+    max-width: 1200px;
 }
 
 .section-padding {
@@ -2388,4 +2395,420 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .seo-contact-form-outer .input-field .form-control {
     background-color: #ffffff;
+}
+
+.yelp-banner-wrapper {
+    background-color: #f4f9fc;
+    padding-bottom: 0;
+}
+
+.yelp-banner-wrapper .banner-content-outer {
+    align-items: flex-start;
+}
+
+.yelp-banner-wrapper .banner-graphics {
+    position: relative;
+    width: auto;
+}
+
+.yelp-banner-wrapper .banner-graphics figure:nth-child(2),
+.yelp-banner-wrapper .banner-graphics figure:nth-child(3) {
+    position: absolute;
+}
+
+.yelp-banner-wrapper .banner-graphics figure:nth-child(2) {
+    top: 30px;
+    right: -30%;
+}
+
+.yelp-banner-wrapper .banner-graphics figure:nth-child(3) {
+    bottom: 50px;
+    left: -117px;
+}
+
+.yelp-banner-wrapper .banner-content-outer .banner-text {
+    margin-bottom: 0;
+    min-width: 580px;
+}
+
+.yelp-banner-wrapper .banner-content-outer .banner-text p {
+    max-width: 540px;
+    font-family: var(--montsrrat);
+}
+
+.yelp-banner-wrapper .banner-text h1 {
+    font-size: 48px;
+    font-family: var(--playfair);
+}
+
+.yelp-banner-wrapper .banner-content-outer .banner-text .banner-btn {
+    margin-top: 30px;
+}
+
+
+.yelp-banner-wrapper .banner-content-outer .banner-text .banner-btn .btn::before,
+.yelp-banner-wrapper .banner-content-outer .banner-text .banner-btn .btn::after {
+    display: none;
+}
+
+.yelp-banner-wrapper .banner-content-outer .banner-text .banner-btn .btn {
+    background-color: var(--primary-color);
+    min-width: auto;
+    padding: 15px 30px;
+    font-weight: 700;
+}
+
+.yelp-banner-wrapper .banner-content-outer .banner-text .banner-btn .btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.yelp-main-content-wapper h2 {
+    font-family: var(--playfair);
+}
+
+.yelp-main-content-wapper h3 {
+    font-family: var(--montsrrat);
+}
+
+.yelp-main-content-wapper *:not(h2, h3, h4, h5, h6) {
+    font-family: var(--raleway);
+}
+
+.rank-boosting-approach-pic {
+    margin-top: 35px;
+    margin-left: -60px;
+}
+
+.rank-boosting-approach-list-outer {
+    background-color: var(--color-white);
+    border: 1px solid #e8f0f5;
+    box-shadow: 4px 0 49px rgba(25, 101, 120, 0.09);
+}
+
+.rank-boosting-approach-list-outer .list-item {
+    border-bottom: 1px solid #e8f0f5;
+    padding: 15px 25px;
+}
+
+.rank-boosting-approach-list-outer .list-item .title-outer {
+    margin-bottom: 15px;
+}
+
+.rank-boosting-approach-list-outer .list-item .title-outer figure {
+    min-width: 51px;
+    width: 51px;
+    margin-right: 10px;
+}
+
+.rank-boosting-approach-list-outer .list-item .title-outer h3 {
+    font-family: var(--montsrrat);
+    font-size: 20px;
+    line-height: 1.3;
+    font-weight: 600;
+    color: #3f3f3f;
+
+}
+
+.rank-boosting-approach-list-outer .list-item p {
+    font-size: 15px;
+    color: #4a4a4a;
+}
+
+.why-yelp-wrapper .section-heading {
+    max-width: 1100px;
+    margin: 0 auto 40px;
+}
+
+.why-yelp-list-outer .list-item {
+    padding: 20px 30px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.why-yelp-list-outer .list-item h3 {
+    font-size: 20px;
+    line-height: 1.3;
+    font-weight: 600;
+    color: #3f3f3f;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.why-yelp-list-outer .list-item h3::before {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    content: "\f00c";
+    font-family: 'Line Awesome Free';
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 1;
+    color: var(--color-white);
+    width: 22px;
+    min-width: 22px;
+    height: 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+}
+
+.why-yelp-list-outer .list-item p {
+    font-size: 17px;
+    color: #2d2c2c;
+}
+
+.yelp-ads-process-wrapper .section-heading {
+    max-width: 980px;
+    margin: 0 auto 40px;
+}
+
+.yelp-ads-process-list-outer {
+    counter-reset: list-counter;
+}
+
+.yelp-ads-process-list-outer .list-item {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ebebeb;
+    position: relative;
+}
+
+
+.yelp-ads-process-list-outer .list-item h3 {
+    font-size: 20px;
+    line-height: 1.3;
+    font-weight: 600;
+    color: #3f3f3f;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.yelp-ads-process-list-outer .list-item h3::before {
+    counter-increment: list-counter;
+    content: counter(list-counter) ".";
+    font-size: 20px;
+    line-height: 1.3;
+    font-weight: 600;
+    color: #3f3f3f;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.yelp-cta-wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+    background-color: #ebf6f9;
+    padding: 0 45px;
+}
+
+.yelp-cta-wrapper .row {
+    align-items: flex-end;
+}
+
+.yelp-cta-wrapper .data-left {
+    padding: 30px 0;
+    max-width: 680px;
+    display: flex;
+}
+
+.yelp-cta-wrapper .data-left .media {
+    min-width: 145px;
+    margin-right: 35px;
+}
+
+.yelp-cta-wrapper .data-left .section-heading h2 {
+    font-size: 40px;
+}
+
+.yelp-cta-wrapper .pic img {
+    width: 100%;
+}
+
+.how-yelp-works-wrapper .section-heading {
+    margin-bottom: 100px;
+}
+
+.how-yelp-works-wrapper [class*=col-] {
+    margin-bottom: 30px;
+}
+
+.how-yelp-works-wrapper .data-card-row {
+    margin-bottom: 50px;
+}
+
+.how-yelp-works-card {
+    padding: 25px 35px;
+    background-color: #fff;
+    border: 1px #efefef solid;
+    box-shadow: 4px 0 46px rgba(0, 1, 1, 0.06);
+    height: 100%;
+}
+
+.how-yelp-works-card h3 {
+    font-size: 22px;
+    line-height: 1.3;
+    font-weight: 600;
+    color: #3f3f3f;
+    margin-bottom: 15px;
+}
+
+.how-yelp-works-listing-data li {
+    margin-bottom: 30px;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #2d2c2c;
+    position: relative;
+    padding-left: 28px;
+}
+
+.how-yelp-works-listing-data li:last-child {
+    margin-bottom: 0;
+}
+
+.how-yelp-works-listing-data li::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    background-image: url(../images/check-circle.png);
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 18px;
+}
+
+.how-yelp-works-wrapper {
+    padding-bottom: 40px;
+}
+
+.key-contrast-features-wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+    border: 1px solid #dcdcdc;
+    padding: 50px;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+}
+
+.key-contrast-features-wrapper .section-heading {
+    margin-bottom: 40px;
+}
+
+.advertising-compare-wrapper .section-heading {
+    margin-bottom: 40px;
+}
+
+.advertising-compare-wrapper .section-heading p {
+    max-width: 970px;
+    margin: 0 auto 20px;
+}
+
+.advertising-compare-table table {
+    width: 100%;
+}
+
+.advertising-compare-table table th {
+    font-family: var(--montsrrat);
+    background-color: #f0f0f0;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #4c4c4c;
+    border-right: 1px solid #e4eaed;
+}
+
+.advertising-compare-table table th:last-child {
+    border-right: 0;
+}
+
+.advertising-compare-table table td {
+    padding: 15px 20px;
+    font-size: 186x;
+    font-weight: 500;
+    color: #2d2c2c;
+    border-right: 1px solid #e4eaed;
+    border-bottom: 1px solid #e4eaed;
+}
+
+.advertising-compare-table table tr:nth-child(even) td {
+    background-color: #f7f7f7;
+}
+
+.advertising-compare-table tr td:first-child {
+    border-left: 1px solid #e4eaed;
+}
+
+.advertising-compare-table table td:last-child {
+    border-right: 1px solid #e4eaed;
+}
+
+.why-choose-yelp-wrapper .section-heading,
+.impact-of-yelp-ads-wrapper .section-heading {
+    margin-bottom: 40px;
+}
+
+.why-choose-yelp-data p,
+.impact-of-yelp-ads-wrapper p {
+    margin-bottom: 20px;
+}
+
+.why-choose-yelp-data li,
+.impact-of-yelp-ads-wrapper li {
+    margin-bottom: 12px;
+    color: #474747;
+    position: relative;
+    padding-left: 28px;
+}
+
+.why-choose-yelp-data li::before,
+.impact-of-yelp-ads-wrapper li::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    background-image: url(../images/check-circle.png);
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 18px;
+}
+
+.impact-of-yelp-ads-data ul {
+    -moz-column-count: 3;
+    column-count: 3;
+    margin-top: 40px;
+}
+
+.yelp-faq-wrapper {
+    background-color: #f6f6f6;
+}
+
+.yelp-faq-wrapper .section-heading {
+    margin-bottom: 40px;
+}
+
+.yelp-faq-wrapper .faq_acrdn .accordion-item .accordion-header .accordion-button {
+    background-color: #fff;
+}
+
+.yelp-faq-wrapper .faq_acrdn .accordion-item {
+    background-color: #fff;
+    box-shadow: 4px 0 68px rgba(0, 1, 1, 0.08);
+}
+
+.yelp-faq-wrapper faq_acrdn .accordion-button::after {
+    color: #000000;
+}
+
+.seo-banner-wrapper .banner-statistics-wrapper {
+    max-width: 1200px;
+}
+
+.footer-cta-wrapper {
+    background-color: #f7f7f7;
+    padding-bottom: 25px;
 }
