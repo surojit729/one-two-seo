@@ -330,7 +330,7 @@
   }
 
   .location-marketing-wrapper [class*=col-]:nth-child(odd) .location-marketing-card .holder .data {
-    text-align: left;
+    text-align: center;
   }
 
   .location-marketing-wrapper [class*=col-]:nth-child(odd) .location-marketing-card .holder {
@@ -393,6 +393,62 @@
     max-width: 100%;
     margin-bottom: 30px;
   }
+
+  .yelp-banner-wrapper .banner-graphics figure:nth-child(2) {
+    display: none;
+  }
+
+  .yelp-banner-wrapper .banner-content-outer .banner-text {
+    min-width: 100%;
+  }
+
+  .yelp-banner-wrapper .banner-content-outer .banner-text p {
+    max-width: 100%;
+  }
+
+  .banner-graphics {
+    margin-top: 30px;
+  }
+
+  .yelp-banner-wrapper .banner-graphics {
+    width: 100%;
+  }
+
+  .yelp-banner-wrapper figure:first-child img {
+    width: 100%;
+  }
+
+  .yelp-banner-wrapper .banner-graphics figure:nth-child(3) {
+    bottom: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -140px;
+  }
+
+  .yelp-banner-wrapper .banner-graphics {
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  .section-heading h2 {
+    font-size: 35px;
+  }
+
+  .rank-boosting-approach-pic {
+    margin-left: 0;
+  }
+
+  .yelp-ads-process-pic {
+    margin-bottom: 30px;
+  }
+
+  .how-yelp-works-listing-pic {
+    text-align: center;
+  }
+
+  .why-choose-yelp-pic {
+    text-align: center;
+  }
 }
 
 @media (max-width: 767px) {
@@ -419,10 +475,7 @@
     padding: 50px 0;
   }
 
-  .section-heading h2 {
-    font-size: 28px;
-    margin-bottom: 15px;
-  }
+
 
   .logo,
   .sticky .logo {
@@ -473,7 +526,8 @@
   .location-marketing-card .holder,
   .location-marketing-wrapper [class*=col-]:nth-child(odd) .location-marketing-card .holder {
     flex-direction: column;
-    align-items: flex-start !important;
+    align-items: center;
+    text-align: center;
   }
 
   .location-marketing-card .data {
@@ -493,7 +547,7 @@
 
   .yelp-partners-cta-wrapper .holder {
     flex-direction: column;
-    align-items: flex-start !important;
+    text-align: center;
   }
 
   .yelp-partners-cta-wrapper .holder h2 {
@@ -518,7 +572,7 @@
 
   .business-revolution-card .holder {
     flex-direction: column;
-    align-items: flex-start !important;
+    text-align: center;
   }
 
   .business-revolution-card .media {
@@ -605,5 +659,99 @@
 
   .power-tailored-seo-wrapper {
     padding-bottom: 0;
+  }
+
+  .post-content-wrapper {
+    padding-top: 70px;
+  }
+
+  .post-content-holder h1 {
+    font-size: 28px;
+  }
+
+  .post-content-holder h2 {
+    font-size: 26px;
+  }
+
+  .post-content-holder h3 {
+    font-size: 22px;
+  }
+
+  .section-heading h2 {
+    font-size: 30px;
+  }
+
+  .yelp-banner-wrapper .banner-graphics figure:nth-child(3) {
+    top: -28%;
+  }
+
+  .yelp-banner-wrapper .banner-graphics {
+    margin-top: 130px;
+  }
+
+  .why-yelp-list-outer .list-item p {
+    font-size: 16px;
+  }
+
+  .why-yelp-list-outer .list-item {
+    padding: 20px;
+  }
+
+  .yelp-cta-wrapper {
+    padding: 0;
+  }
+
+  .yelp-cta-wrapper .data-left {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .yelp-cta-wrapper .data-left .media {
+    margin-right: 0;
+  }
+
+  .how-yelp-works-wrapper .section-heading {
+    margin-bottom: 40px;
+  }
+
+  .key-contrast-features-wrapper {
+    padding: 40px 0;
+  }
+
+  .advertising-compare-table table th,
+  .advertising-compare-table table td {
+    padding: 15px 10px;
+    white-space: normal;
+    font-size: 16px;
+    word-break: break-all;
+  }
+
+  .impact-of-yelp-ads-data ul {
+    -moz-column-count: 2;
+    column-count: 2;
+    margin-top: 25px;
+  }
+
+  .rank-boosting-approach-list-outer .list-item {
+    padding: 15px;
+  }
+
+  .yelp-cta-wrapper .data-left .section-heading h2 {
+    font-size: 28px;
+  }
+
+  .how-yelp-works-card {
+    padding: 15px;
+  }
+
+  .why-choose-yelp-wrapper .section-heading,
+  .impact-of-yelp-ads-wrapper .section-heading {
+    margin-bottom: 0;
+  }
+
+  .footer-cta-wrapper {
+    text-align: center;
   }
 }
