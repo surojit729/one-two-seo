@@ -71,7 +71,7 @@
     background: #fff;
     overflow-y: auto;
     transition: transform 0.5s cubic-bezier(0.07, 0.23, 0.34, 1);
-    padding: 10px 15px 20px;
+    padding: 30px 0;
     z-index: 99;
   }
 
@@ -115,21 +115,22 @@
     font-weight: 400;
     display: block;
     color: #000000;
-    padding: 5px 0;
+    padding: 10px 20px;
   }
 
-  .hdr_menu li a:hover {
-    color: #688238 !important;
+  .hdr_menu li a:hover,
+  .sticky .hdr_menu li:hover a {
+    color: var(--primary-color) !important;
+  }
+
+  .hdr_menu li.current-menu-item a {
+    color: #fff;
+    background-color: var(--primary-color);
   }
 
   .hdr_menu li a::before {
     display: none;
   }
-
-  .hdr_menu li:hover a {
-    color: #000000 !important;
-  }
-
 
 
   .hdr_menu li.menu-item-has-children .sub-menu a {
@@ -138,16 +139,16 @@
   }
 
   .hdr_menu li.menu-item-has-children .sub-menu a:hover {
-    color: #688238;
+    color: var(--primary-color);
     padding-left: 0;
   }
 
   .hdr_menu li.menu-item-has-children.current-menu-item>a {
-    color: #688238;
+    color: var(--primary-color);
   }
 
   .hdr_menu li.menu-item-has-children.current-menu-item>a:hover {
-    color: #688238;
+    color: var(--primary-color);
   }
 
   .hdr_menu li>a::after {
@@ -155,11 +156,11 @@
   }
 
   .sticky .hdr_menu li.current-menu-item a {
-    color: #688238;
+    color: var(--primary-color);
   }
 
-  .sticky .hdr_menu li:hover a {
-    color: #688238;
+    {
+    color: var(--primary-color);
   }
 
   .sticky .hdr_menu li a {
@@ -222,7 +223,7 @@
   }
 
   .mobile_menu_active .menu_btn span {
-    background: #688238;
+    background: var(--primary-color);
   }
 
   .mobile_menu_active .menu_btn span:first-child {
@@ -270,6 +271,7 @@
   .responisve-logo {
     display: block;
     width: 270px;
+    margin-left: 20px;
   }
 
   .header-social-list-outer {
@@ -448,6 +450,10 @@
 
   .why-choose-yelp-pic {
     text-align: center;
+  }
+
+  .how-yelp-works-wrapper .section-heading::before {
+    display: none;
   }
 }
 
