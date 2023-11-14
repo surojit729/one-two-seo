@@ -115,7 +115,7 @@
     font-weight: 400;
     display: block;
     color: #000000;
-    padding: 10px 20px;
+    padding: 14px 20px;
   }
 
   .hdr_menu li a:hover,
@@ -451,6 +451,60 @@
 
   .how-yelp-works-wrapper .section-heading::before {
     display: none;
+  }
+
+  .hdr_menu ul li.responsive-menu-item {
+    display: block !important;
+  }
+
+  .hdr_menu ul li.responsive-menu-item a {
+    font-family: var(--secondary-font);
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: var(--secondary-color);
+    padding: 18px 30px;
+    min-width: 300px;
+    border: 0;
+    border-radius: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    overflow: hidden;
+    z-index: 9;
+    margin-top: 20px;
+  }
+
+  .hdr_menu ul li.responsive-menu-item a::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0px;
+    left: -10px;
+    width: calc(100% - 40px);
+    height: 100%;
+    background-color: var(--primary-color);
+    transform: skewX(-15deg);
+    z-index: -1;
+    transition: var(--primary-transition);
+  }
+
+  .hdr_menu ul li.responsive-menu-item a::after {
+    display: block;
+    content: "\f095";
+    position: absolute;
+    font-family: 'Line Awesome Free';
+    font-weight: 900;
+    right: 20px;
+  }
+
+  .hdr_menu ul li.responsive-menu-item a:hover {
+    color: #fff !important;
   }
 }
 

@@ -662,6 +662,7 @@ input[type="number"]::-webkit-outer-spin-button {
     right: 0;
     padding: 10px 0;
     background-color: #fff;
+    background: linear-gradient(to right, #f3f3f3 0%, #ffffff 50%, #f3f3f3 100%);
     transition: all 0.4s ease-in-out;
 }
 
@@ -683,8 +684,9 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .hddr_inr {
-    margin-left: auto;
-    margin-right: 10%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .hdr_menu li {
@@ -1525,7 +1527,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .banner-review-outer .review-text p {
-    margin: 25px 0 15px;
+    margin: 25px 0 40px;
     position: relative;
     padding-left: 40px;
 }
@@ -1547,6 +1549,7 @@ input[type="number"]::-webkit-outer-spin-button {
     color: #292c30;
     position: relative;
     margin-bottom: 30px;
+    display: none;
 }
 
 .banner-review-outer .review-authar p::before {
@@ -1718,6 +1721,8 @@ input[type="number"]::-webkit-outer-spin-button {
     border-color: transparent #ffffff transparent transparent;
 
 }
+
+
 
 .marketing-service-wrapper [class*=col-]:last-child .marketing-service-card::before {
     right: auto;
@@ -2078,8 +2083,15 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .boost-business-ranking-wrapper .marketing-service-card {
-    background-color: #fff;
-    border: 1px solid #d8d8d8;
+    background-color: transparent;
+    border: 0;
+    background-image: url(../images/seo-marketing-card-banner.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.marketing-service-wrapper [class*=col-]:nth-child(2) .marketing-service-card {
+    background-image: url(../images/seo-marketing-card-banner2.png);
 }
 
 .boost-business-ranking-wrapper .marketing-service-card h3 {
@@ -2116,6 +2128,12 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .coprehensive-seo-wrapper .coprehensive-seo-content-holder .section-heading {
     max-width: 620px;
+}
+
+@media (min-width:992px) {
+    .coprehensive-seo-wrapper .coprehensive-seo-content-holder .section-heading h2 {
+        font-size: 43px;
+    }
 }
 
 .coprehensive-seo-wrapper [class*=col-] {
@@ -2310,6 +2328,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .faq_acrdn .accordion-item .accordion-header .accordion-button {
+    font-family: var(--raleway);
     padding: 20px 57px 20px 20px;
     display: block;
     width: 100%;
@@ -2446,20 +2465,24 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 
-.yelp-banner-wrapper .banner-content-outer .banner-text .banner-btn .btn::before,
-.yelp-banner-wrapper .banner-content-outer .banner-text .banner-btn .btn::after {
-    display: none;
-}
-
 .yelp-banner-wrapper .banner-content-outer .banner-text .banner-btn .btn {
-    background-color: var(--primary-color);
-    min-width: auto;
+    min-width: 200px;
     padding: 15px 30px;
     font-weight: 700;
 }
 
 .yelp-banner-wrapper .banner-content-outer .banner-text .banner-btn .btn:hover {
     background-color: var(--secondary-color);
+}
+
+.yelp-banner-wrapper .banner-content-outer .banner-text .banner-btn .btn:after {
+    display: block;
+    content: "\f095";
+    position: absolute;
+    font-family: 'Line Awesome Free';
+    font-weight: 900;
+    right: 20px;
+    font-size: 15px;
 }
 
 .yelp-main-content-wapper h2 {
