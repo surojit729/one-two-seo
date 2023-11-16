@@ -429,7 +429,9 @@
     margin-top: 100px;
   }
 
-  .section-heading h2 {
+  .section-heading h2,
+  .contact-us-data h1,
+  .about-info-wrapper .section-heading h1 {
     font-size: 35px;
   }
 
@@ -505,6 +507,15 @@
 
   .hdr_menu ul li.responsive-menu-item a:hover {
     color: #fff !important;
+  }
+
+  .about-info-pic img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .about-info-wrapper .section-heading {
+    padding-left: 0;
   }
 }
 
@@ -686,7 +697,9 @@
     gap: 25px;
   }
 
-  .footer-cta-wrapper .section-heading h2 {
+  .footer-cta-wrapper .section-heading h2,
+  .about-info-wrapper .section-heading h1,
+  .contact-us-data h1 {
     font-size: 28px;
   }
 
