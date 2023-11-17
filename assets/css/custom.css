@@ -2381,6 +2381,14 @@ input[type="number"]::-webkit-outer-spin-button {
     border-top: 1px solid #eaeaea;
 }
 
+.faq_acrdn .accordion-body .advertising-compare-table {
+    margin-top: 25px;
+}
+
+.faq_acrdn .accordion-body .advertising-compare-table tr:first-child td {
+    border-top: 1px solid #e4eaed;
+}
+
 .seo-form-wrapper {
     background-color: #fbfbfb;
     padding: 70px 0;
@@ -2499,7 +2507,8 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .rank-boosting-approach-pic {
     margin-top: 35px;
-    margin-left: -60px;
+    margin-left: 0;
+    margin-right: 50px;
 }
 
 .rank-boosting-approach-list-outer {
@@ -2534,12 +2543,38 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .rank-boosting-approach-list-outer .list-item p {
     font-size: 15px;
+    line-height: 1.65;
     color: #4a4a4a;
 }
 
 .why-yelp-wrapper .section-heading {
-    max-width: 1100px;
     margin: 0 auto 40px;
+    background-color: #1587a7;
+    padding: 25px;
+    position: relative;
+}
+
+.why-yelp-wrapper .section-heading::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -10px);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 17.5px 15px 17.5px;
+    border-color: transparent transparent #ffffff transparent;
+}
+
+.why-yelp-wrapper .section-heading h2 {
+    color: #fff;
+}
+
+.why-yelp-wrapper .section-heading p {
+    max-width: 940px;
+    margin: 0 auto;
+    color: #fff;
 }
 
 .why-yelp-list-outer .list-item {
@@ -2550,18 +2585,18 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .why-yelp-list-outer .list-item h3 {
-    font-size: 20px;
+    font-size: 25px;
     line-height: 1.3;
     font-weight: 600;
     color: #3f3f3f;
     margin-bottom: 20px;
-    padding-left: 30px;
+    padding-left: 35px;
     position: relative;
 }
 
 .why-yelp-list-outer .list-item h3::before {
     position: absolute;
-    top: 2px;
+    top: 4px;
     left: 0;
     content: "\f00c";
     font-family: 'Line Awesome Free';
@@ -2576,7 +2611,7 @@ input[type="number"]::-webkit-outer-spin-button {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background-color: var(--primary-color);
+    background-color: #f9ba40;
 }
 
 .why-yelp-list-outer .list-item p {
@@ -2627,6 +2662,7 @@ input[type="number"]::-webkit-outer-spin-button {
     max-width: 1170px;
     margin: 0 auto;
     background-color: #ebf6f9;
+    background: linear-gradient(to right, #ffffff 0%, #f3f3f3 50%, #ffffff 100%);
     padding: 0 45px;
 }
 
@@ -2636,17 +2672,21 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .yelp-cta-wrapper .data-left {
     padding: 30px 0;
-    max-width: 680px;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .yelp-cta-wrapper .data-left .media {
-    min-width: 145px;
-    margin-right: 35px;
+    min-width: 85px;
+    max-width: 85px;
+    margin-right: 25px;
 }
 
 .yelp-cta-wrapper .data-left .section-heading h2 {
     font-size: 40px;
+    margin-bottom: 0;
+    font-weight: 600;
 }
 
 .yelp-cta-wrapper .pic img {
@@ -2693,6 +2733,14 @@ input[type="number"]::-webkit-outer-spin-button {
     font-weight: 600;
     color: #3f3f3f;
     margin-bottom: 15px;
+}
+
+.how-yelp-works-card h3 span {
+    font-family: var(--montsrrat);
+    display: block;
+    font-size: 32px;
+    text-transform: capitalize;
+    color: var(--primary-color);
 }
 
 .how-yelp-works-listing-data li {
@@ -2751,12 +2799,25 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .advertising-compare-table table th {
     font-family: var(--montsrrat);
-    background-color: #f0f0f0;
+    /* background-color: #f0f0f0; */
     padding: 15px 20px;
     font-size: 18px;
     font-weight: 500;
     color: #4c4c4c;
     border-right: 1px solid #e4eaed;
+    border-bottom: 1px solid #e4eaed;
+}
+
+.advertising-compare-table table th:nth-child(2),
+.advertising-compare-table table th:nth-child(3) {
+    background-color: var(--primary-color);
+    color: var(--color-white);
+    text-align: center;
+}
+
+.advertising-compare-table table th:nth-child(2) span,
+.advertising-compare-table table th:nth-child(3) span {
+    margin-right: 12px;
 }
 
 .advertising-compare-table table th:last-child {
@@ -2765,15 +2826,23 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .advertising-compare-table table td {
     padding: 15px 20px;
-    font-size: 186x;
+    font-size: 16px;
     font-weight: 500;
     color: #2d2c2c;
     border-right: 1px solid #e4eaed;
     border-bottom: 1px solid #e4eaed;
 }
 
-.advertising-compare-table table tr:nth-child(even) td {
+.advertising-compare-table table tr:nth-child(even) td:nth-child(1) {
     background-color: #f7f7f7;
+}
+
+.advertising-compare-table table tr:nth-child(even) td:nth-child(2) {
+    background-color: #faf7f1;
+}
+
+.advertising-compare-table table tr:nth-child(even) td:nth-child(3) {
+    background-color: #ecf5f7;
 }
 
 .advertising-compare-table tr td:first-child {
